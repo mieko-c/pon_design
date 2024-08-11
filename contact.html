@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PonDesign</title>
+    <meta name="description" content="上級編">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="news_header_bg">
+        <div class="news_header_bg_img"><img src="img/kv.jpg" alt="fv_img"></div>
+        <div class="header_wrap">
+            <div class="header_logo"><a href="./index.html"><img src="img/logo.svg" alt="logo"></a></div>
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./service.html">SERVICE</a></li>
+                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./company.html">COMPANY</a></li>
+                    <li><a href="./recruit.html">RECRUIT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+            <nav class="sp_nav">
+                <ul>
+                    <li><a href="./news.html">NEWS</a></li>
+                    <li><a href="./service.html">SERVICE</a></li>
+                    <li><a href="./works.html">WORKS</a></li>
+                    <li><a href="./company.html">COMPANY</a></li>
+                    <li><a href="./recruit.html">RECRUIT</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="news_fv_text">
+            <h2 class="fv_text01">CONTACT</h2>
+            <h3 class="fv_text02">お問い合わせ</h3>
+        </div>
+    </header>
+
+    <div class="home_btn">
+        <ol class="breadcrumb__list">
+            <!-- 1つめ -->
+            <li class="breadcrumb__item01">
+                <a href="index.html" class="breadcrumb__link">
+                    <span>HOME</span>
+                </a>
+            </li>
+            <!-- 2つめ -->
+            <li class="breadcrumb__item02">
+                <span>CONTACT</span>
+            </li>
+        </ol>
+    </div>
+
+    <p class="contact_text">Webサイトの制作のご依頼やお見積りなど、<br class="sp">お気軽にご相談ください。</p>
+
+    <div class="contact_container">
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdImlN6muYT4xNZpIiY25w7IX1lN3fFxOBy6F5Q7Ftqw9vj0Q/formResponse">
+            <div class="contact_inner">
+                <div class="radio">
+                    <div class="radio_title">
+                        <p class="radio_list01">お問い合わせ種別</p>
+                        <p class="radio_list02">*必須</p>
+                    </div>
+                    <div class="type_wrap">
+                        <label>
+                            <input type="radio" name="entry.552894353" value="お仕事のご依頼・ご相談" checked>
+                            <span class="type">お仕事のご依頼・ご相談</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="entry.552894353" value="お見積りのご依頼">
+                            <span class="type">お見積りのご依頼</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="entry.552894353" value="採用について">
+                            <span class="type">採用について</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="entry.552894353" value="その他">
+                            <span class="type">その他</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="name">
+                    <div class="contact_item">
+                        <p class="radio_list01"><label for="name">お名前</label></p>
+                        <p class="radio_list02"><label for="name">*必須</label></p>
+                    </div>
+                    <input id="name" type="text" name="entry.1483208690" required>
+                </div>
+                <div class="company_name">
+                    <div class="contact_item">
+                        <p class="radio_list01"><label for="company_name">会社名</label></p>
+                    </div>
+                    <input id="company_name" type="text" name="entry.637273413">
+                </div>
+                <div class="email">
+                    <div class="contact_item">
+                        <p class="radio_list01"><label for="email">メールアドレス</label></p>
+                        <p class="radio_list02"><label for="email">*必須</label></p>
+                    </div>
+                    <input id="email" type="email" name="entry.1522647959" required>
+                </div>
+                <div class="tel">
+                    <div class="contact_item_question">
+                        <p class="radio_list01"><label for="number">お電話番号</label></p>
+                        <p class="annotation"><label for="number">(半角数字ハイフンなし)</label></p>
+                    </div>
+                    <input id="number" type="text" name="entry.1168172345">
+                </div>
+                <div class="inquiry">
+                    <div class="contact_item">
+                        <p class="radio_list01"><label for="inquiry_name">お問い合わせ内容</label></p>
+                        <p class="radio_list02"><label for="inquiry_name">*必須</label></p>
+                    </div>
+                    <textarea id="inquiry_name" name="entry.691653817" required></textarea>
+                </div>
+                <div class="question">
+                    <div class="contact_item_question">
+                        <p class="radio_list01">PON DESIGNをどちらでお知りになりましたか？</p>
+                        <p class="radio_list02"><label for="inquiry_name">*必須</label></p>
+                    </div>
+                    <select name="entry.852545853">
+                        <option value="">選択してください</option>
+                        <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                        <option value="SNS">SNS</option>
+                        <option value="ブログ">ブログ</option>
+                        <option value="友人や知人">友人や知人</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+                <div class="submit_button">
+                    <button type="submit" name="button">送信する</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <a class="pagetop" href="index.html"><i class="fa-solid fa-arrow-up"></i></a>
+
+        <div class="footer_nav">
+            <ul class="footer_nav_top">
+                <li><a href="./news.html">NEWS</a></li>
+                <li><a href="./service.html">SERVICE</a></li>
+                <li><a href="./works.html">WORKS</a></li>
+                <li><a href="./company.html">COMPANY</a></li>
+                <li><a href="./recruit.html">RECRUIT</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; PON DESIGN</p>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/aa21eebd00.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

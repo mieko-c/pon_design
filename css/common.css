@@ -1,0 +1,670 @@
+/* --header-- */
+header {
+    position: relative;
+}
+.header_bg img {
+    width: 100%;
+    height: 767.5px;
+    object-fit: cover;
+}
+.header_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 34px 30px;
+    z-index: 2;
+    transition: 0.3s;
+}
+.header_logo img {
+    width: 160px;
+}
+.pc_nav ul {
+    display: flex;
+}
+.pc_nav ul li {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    padding-right: 25px;
+}
+.pc_nav ul li:last-child {
+    padding-right: 0;
+}
+.fv_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fv_text h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 3.6px;
+    padding-bottom: 15px;
+}
+.fv_text p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2.4px;
+    padding-bottom: 47px;
+}
+.btn {
+    border-radius: 50px;
+    height: 54px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    /* background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0%
+        0% no-repeat padding-box; */
+    background-color: #031179;
+    border: none;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.btn:hover {
+    background: #f1ebf8;
+    color: #031179;
+}
+.fv_text a {
+    height: 55px;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    letter-spacing: 0.75px;
+    max-width: 220px;
+    width: 100%;
+    background: transparent;
+}
+.fv_text_pc {
+    padding-right: 28px;
+}
+.fv_scroll {
+    position: relative;
+}
+.fv_scroll p {
+    position: absolute;
+    right: 30px;
+    bottom: 85.5px;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+}
+.fv_scroll p::after {
+    content: "";
+    position: absolute;
+    bottom: -85.5px;
+    right: 6px;
+    height: 85.5px;
+    border-left: 1px solid #ffffff;
+    transform: translateX(-50%);
+    /* 線の動き何秒かけて動く。永遠にループ */
+    animation: pathmove 1.5s ease-in-out infinite;
+    opacity: 0;
+}
+/* 高さ・位置・透過が変化して線が上から下に動く */
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 65px;
+        opacity: 0;
+    }
+    30% {
+        height: 86px;
+        opacity: 1;
+    }
+    100% {
+        height: 0;
+        top: 148px;
+        opacity: 1;
+    }
+}
+/* --contact-- */
+.contact {
+    background-color: #f7f7f7;
+    padding: 80px 0 80px 0;
+    text-align: center;
+}
+.company_contact {
+    background-color: #f7f7f7;
+    padding: 80px 0 80px 0;
+    text-align: center;
+}
+.contact p {
+    font-size: 15px;
+    padding: 30px 0 29px 0;
+}
+.company_contact p {
+    font-size: 15px;
+    padding: 30px 0 29px 0;
+}
+/* --footer-- */
+footer {
+    padding: 60px 0;
+    background-color: #120e19;
+    position: relative;
+}
+.pagetop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #707070;
+    /* position: absolute; */
+    right: 45px;
+    bottom: 45px;
+    border: 1px solid #707070;
+    z-index: 99;
+}
+.pagetop i {
+    text-align: center;
+    width: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #031179;
+}
+/* .pagetop::before {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    content: "↑";
+    color: #031179;
+    font-weight: bold;
+    font-size: 14px;
+} */
+/* .pagetop::after {
+    content: "";
+    left: 21px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #031179;
+    border-right: 2px solid #031179;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 19px;
+    border-radius: 1px;
+} */
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    padding-bottom: 22px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+.footer_nav_top {
+    display: flex;
+}
+.footer_nav_top li {
+    padding-right: 20px;
+}
+.footer_nav_top li:last-child {
+    padding-right: 0;
+}
+.footer_nav_bottom {
+    display: flex;
+}
+.footer_nav_bottom li {
+    padding-left: 20px;
+}
+.copyright {
+    text-align: center;
+    color: #a798b7;
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+/* --news.html-- */
+/* .news_header_bg {
+    position: relative;
+} */
+.news_header_bg_img img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.news_fv_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fv_text01 {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    padding-bottom: 0;
+}
+.fv_text02 {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+}
+.breadcrumb__list {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.breadcrumb__list a {
+    padding-right: 26px;
+}
+.breadcrumb__item01,
+.breadcrumb__item02,
+.breadcrumb__item03 {
+    display: inline;
+    position: relative;
+}
+.breadcrumb__item01::after {
+    position: absolute;
+    right: 10px;
+    content: ">";
+    color: #555;
+}
+.breadcrumb__item03::before {
+    position: absolute;
+    left: -19px;
+    content: ">";
+    color: #555;
+}
+.home_btn {
+    /* display: flex; */
+    padding: 15px 0 15px 165px;
+    background-color: #f7f7f7;
+    font-size: 12px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0.6px;
+}
+a:hover {
+    color: #031179;
+    transition: 1s;
+}
+
+/* --contact.html-- */
+.contact_container {
+    max-width: 1110px;
+    width: 90%;
+    height: 1124px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding: 87px 5% 90px 5%;
+}
+.contact_text {
+    text-align: center;
+    letter-spacing: 0.8px;
+    padding: 67px 0 38px 0;
+}
+.radio_title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+.radio_list01 {
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    padding-right: 21px;
+}
+.type_wrap {
+    display: flex;
+}
+.radio_list02 {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    color: #031179;
+}
+.radio_list02 label {
+    vertical-align: sub;
+}
+.type {
+    padding-right: 15px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: text-top;
+}
+.name p {
+    padding-top: 27px;
+}
+.contact_item,
+.contact_item_question {
+    display: flex;
+}
+.name,
+.company_name,
+.email,
+.tel,
+.inquiry {
+    padding-bottom: 27px;
+}
+input {
+    max-width: 300px;
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+.tel input {
+    max-width: 200px;
+    width: 100%;
+}
+textarea {
+    max-width: 601px;
+    height: 255px;
+    padding: 10px;
+    width: 100%;
+}
+select {
+    max-width: 300px;
+    height: 40px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.submit_button button {
+    border-radius: 50px;
+    height: 54px;
+    max-width: 200px;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    /* background: transparent linear-gradient(90deg, #7633a4 0%, #250d65 100%) 0%
+        0% no-repeat padding-box; */
+    background-color: #031179;
+    border: none;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.submit_button button:hover {
+    background: #f1ebf8;
+    color: #031179;
+    transition: 1s;
+}
+/* --出し分け-- */
+.sp,
+.sp_btn,
+.sp_nav {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .fv_text h1 {
+        font-size: 47px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sp {
+        display: block;
+    }
+    .pc,
+    .pc_nav {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_btn {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .sp_btn::before {
+        content: ""; /* 必須プロパティ */
+        /* background-image: url(../images/hamburger_logo.svg); */
+        background-size: cover; /* 画像を親要素に合わせる */
+        background-position: center; /* 画像を中央に配置 */
+        background-repeat: no-repeat;
+        /* 要素を上下中央に配置する4点セット */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        z-index: -1; /* テキストや他の要素の上に配置するために必要な場合があります */
+    }
+
+    .sp_btn span {
+        top: 10px;
+        position: relative;
+        display: block;
+        width: 34px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 34px;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    /* ハンバーガー閉じる */
+    .sp_btn.open span {
+        background: transparent;
+    }
+
+    .sp_btn.open span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .sp_btn.open span::after {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* background: rgba(230, 220, 204, 1); */
+        background: transparent
+            linear-gradient(155deg, #642390 0%, #19074a 100%) 0% 0% no-repeat
+            padding-box;
+        z-index: 1;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .sp_nav ul li {
+        padding: 10px;
+        color: #26130e;
+        font-size: 15px;
+        letter-spacing: 0.75px;
+        font-family: Montserrat, sans-serif;
+        font-weight: bold;
+        color: #ffffff;
+        /* font-style: normal; */
+    }
+
+    /* --header-- */
+    .header_bg img {
+        height: 811.5px;
+    }
+    .header_wrap {
+        padding: 21px 20px;
+    }
+    .header_logo img {
+        width: 124px;
+    }
+    .fv_text {
+        position: absolute;
+        left: 20px;
+        transform: translate(0, -50%);
+        text-align: left;
+    }
+    .fv_text h1 {
+        font-size: 38px;
+        letter-spacing: 2px;
+        padding-bottom: 17px;
+    }
+    .fv_text p {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        padding-bottom: 28px;
+    }
+    .fv_text a {
+        margin-left: 0;
+    }
+    .fv_text_pc {
+        display: none;
+    }
+    /* --news.html-- */
+    .home_btn {
+        font-size: 11px;
+        letter-spacing: 0.55px;
+        padding: 6px 0 6px 20px;
+    }
+    /* --contact-- */
+    .contact {
+        padding: 60px 20px;
+    }
+    .company_contact {
+        margin-top: 0;
+        padding: 60px 0 60px 0;
+    }
+    .contact p {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        padding: 26px 0 28px 0;
+    }
+    .company_contact p {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        padding: 26px 0 28px 0;
+    }
+    /* --footer-- */
+    footer {
+        margin-top: 0;
+        padding-left: 31px;
+        padding-right: 20px;
+    }
+    .pagetop {
+        right: 20px;
+        bottom: 20px;
+    }
+    .footer_nav {
+        flex-direction: column;
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    .footer_nav_top {
+        flex-wrap: wrap;
+    }
+    .footer_nav_bottom li:first-child {
+        padding-left: 0;
+    }
+    /* --contact.html-- */
+    .contact_item_question {
+        display: block;
+    }
+    .contact_container {
+        height: auto;
+        margin-bottom: 40px;
+        padding: 27px 30px 43px 30px;
+    }
+    .contact_text {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        padding: 37px 0 28px 0;
+    }
+    .radio_title {
+        padding-bottom: 13px;
+    }
+    .radio_list01 {
+        font-size: 15px;
+        letter-spacing: 0.75px;
+    }
+    .type_wrap {
+        display: block;
+    }
+    .type {
+        padding-right: 0;
+        font-size: 13px;
+        letter-spacing: 0.65px;
+    }
+    .name,
+    .company_name,
+    .email,
+    .tel,
+    .inquiry {
+        padding-bottom: 34px;
+    }
+    input {
+        max-width: 275px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .footer_nav_top li {
+        padding-bottom: 20px;
+    }
+    .footer_nav {
+        padding-bottom: 10px;
+    }
+}
